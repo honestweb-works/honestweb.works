@@ -1,0 +1,40 @@
+.main {
+  padding: 2rem;
+  min-height: calc(100vh - 2rem);
+  display: grid;
+  place-content: center;
+}
+
+.main h5 {
+  font-size: max(3vw, 1rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.main h1 {
+  font-size: max(11vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.sub {
+  padding: 0 2rem 2rem;
+}
+
+.sub a {
+  border-bottom: 1px solid var(--c-2);
+  transition: border-bottom 0.2s ease;
+}
+.sub a:hover {
+  border-bottom: 1px solid var(--c-1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .sub a {
+    border-bottom: 1px solid var(--c-1);
+  }
+  .sub a:hover {
+    border-bottom: 1px solid var(--c-2);
+  }
+}
